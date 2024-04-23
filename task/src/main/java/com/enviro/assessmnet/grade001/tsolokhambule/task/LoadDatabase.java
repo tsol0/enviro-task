@@ -10,7 +10,7 @@ import com.enviro.assessmnet.grade001.tsolokhambule.task.model.WasteCategory;
 import com.enviro.assessmnet.grade001.tsolokhambule.task.model.WasteCategoryRepository;
 
 @Configuration
-class LoadDatabase {
+public class LoadDatabase {
     private static final Logger log = LoggerFactory.getLogger(LoadDatabase.class);
 
     @Bean

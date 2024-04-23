@@ -15,7 +15,8 @@ public class WasteCategoryModelAssembler implements RepresentationModelAssembler
     public EntityModel<WasteCategory> toModel(WasteCategory wasteCategory) {
         return EntityModel.of(wasteCategory, //
         linkTo(methodOn(WasteCategoryController.class).getOneCategory(wasteCategory.getId())).withSelfRel(),
-        linkTo(methodOn(WasteCategoryController.class).all()).withRel("employees"));
+        linkTo(methodOn(WasteCategoryController.class).all()).withRel("wasteCategories")
+        );
         
     }
     
